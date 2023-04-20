@@ -4,8 +4,12 @@ import './styles.css'
 import { NavLink } from 'react-router-dom';
 import { Menu } from '@mui/material';
 import { Close } from '@mui/icons-material';
+import { useSelector } from 'react-redux';
 
 function Header() {
+
+    const getData = useSelector((state) => state.cartReducer.carts);
+    console.log(getData)
 
     const [anchorE1, setAnchorE1] = useState(null);
     const open = Boolean(anchorE1);
@@ -33,7 +37,7 @@ function Header() {
                         onClick={handleClick}
                     >
                         <ShoppingCartIcon style={{ fontSize: 50 }} />
-                        <span>0</span>
+                        <span>{getData.length}</span>
                     </div>
                 </nav>
             </div>
