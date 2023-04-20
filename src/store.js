@@ -1,6 +1,8 @@
-export const ADD = (item) => {
-    return {
-        type: "ADD_CART",
-        payload: item
-    }
-}
+import { createStore } from "redux";
+import rootred from "./redux/reducers/main";
+
+const store = createStore(
+    rootred
+);
+
+export default store;
