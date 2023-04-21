@@ -25,7 +25,7 @@ function Cards() {
                         </div>
                         <h3>{element.rname}</h3>
                         <p>Price: ${element.price}</p>
-                        <a onClick={() => send(element)}>Add to cart</a>
+                        <a onClick={() => send(element)} style={{ cursor: "pointer" }}>Add to cart</a>
                     </div>
                 )
                 )}
