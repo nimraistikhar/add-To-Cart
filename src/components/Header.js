@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 function Header() {
 
     const getData = useSelector((state) => state.cartReducer.carts);
-    console.log(getData)
+    // console.log(getData)
 
     const [anchorE1, setAnchorE1] = useState(null);
     const open = Boolean(anchorE1);
