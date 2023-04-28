@@ -32,7 +32,6 @@ function CardsDetails() {
             <h2>Items Details Page</h2>
             <div className='cardDetailContainer'>
 
-
                 {
                     data.map((ele) => {
                         return (
@@ -63,27 +62,6 @@ function CardsDetails() {
                         )
                     })
                 }
-
-                {/* {cardData.map((element) => {
-                    <>
-                        <div className='cardDetailContainerImg'>
-                            <img src={element.imgdata} />
-                        </div>
-                        <div className='cardDetailContent'>
-                            <div className='cardDetailtext'>
-                                <div><p><span>Restaurant</span> : {element.rname}</p></div>
-                                <div><p><span>Price</span> : $ {element.price}</p></div>
-                                <div><p><span>Dishes</span> : {element.address}</p></div>
-                                <div><p><span>Total</span> : $ 300</p></div>
-                            </div>
-                            <div className='cardDetailtext'>
-                                <div><span>Rating</span> : <a>3.5 <Star /></a></div>
-                                <div><p><span>Orer Review</span> : 1175 + order placed from here recently</p></div>
-                                <div><span>Remove</span> : <a><Delete /></a></div>
-                            </div>
-                        </div>
-                    </>
-                })} */}
             </div>
         </div>
     )
